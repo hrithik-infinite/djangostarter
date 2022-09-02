@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <table border="2">
+            {% for x in mychild %}
+            <tr>
+                <!-- <td>{{x.id}}</td> -->
+                <td><a href="update/{{x.id}}">{{x.id}}</a></td>
+                <td>{{x.firstName}}</td>
+                <td>{{x.lastName}}</td>
+                <td>{{x.email}}</td>
+                <td><a href="delete/{{x.id}}">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <a href="add/">Add User</a>
+    </body>
+</html>

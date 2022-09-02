@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Add New User.</h1>
+        <form action="addrecord/" method="post">
+            {% csrf_token %}
+            <h3>First Name :</h3> <input name="first"/><br><br><br><br>
+            <h3>Last Name : </h3> <input name="last"/><br><br><br><br>
+            <h3>Email Id : </h3> <input name="email"/><br><br><br><br>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Updating the Current Player.</h1>
+        <form action="updaterecord/{{mychild.id}}" method="post">
+            {% csrf_token %}
+            <h3>First Name :</h3> <input name="first" value="{{mychild.firstName}}"/><br>
+            <h3>Last Name : </h3> <input name="last" value="{{mychild.lastName}}"/><br>
+            <h3>Team Name : </h3> <input name="team" value="{{mychild.cricketTeam}}"/><br>
+            <h3>Role in Team : </h3> <input name="role" value="{{mychild.role}}"/><br>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
